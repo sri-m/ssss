@@ -1,0 +1,26 @@
+		<div id="menu-wrapper">
+			<ul id="menu">
+				<li class="current_page_item"><%= link_to "Homepage", root_path %></li>
+				<li><span>Blog</span>
+					<ul>
+						<li class="first"> <a href="index">Maecenas luctus lectus</a> </li>
+						<li> <a href="search">Integer gravida</a> </li>
+						<li class="last"> <a href="about">Ut nonummy rutrum</a> </li>
+					</ul>
+				</li>
+				<li><%= link_to "Students", colleges_student_path %></li>
+				<li><a href="#"><span>About</span></a></li>
+				<li><span>Links</span>
+					<ul>
+						<li class="first"> <a href="index">Maecenas luctus lectus</a> </li>
+						<li> <a href="search">Integer gravida</a> </li>
+						<li class="last"> <a href="about">Ut nonummy rutrum</a> </li>
+					</ul>
+				</li>
+				<li><a href="#"><span>Contact</span></a></li>
+			</ul>
+			<script type="text/javascript">
+			$('#menu').dropotron();
+		</script> 
+		</div>
+		<!-- end #menu -->

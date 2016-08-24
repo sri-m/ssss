@@ -1,0 +1,1 @@
+json.array! @sregistrations, partial: 'sregistrations/sregistration', as: :sregistration

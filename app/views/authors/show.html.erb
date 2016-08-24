@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @author.name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @author.gender %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @author.address %>
+</p>
+
+<table>
+<th>Book Name</th><th>Published Date</th>
+<% @author.books.each do |value| %>
+  <tr>
+  	<td><%= value.book_name %></td><td><%= value.published_date %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>

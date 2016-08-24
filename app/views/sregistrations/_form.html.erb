@@ -1,0 +1,17 @@
+<%= semantic_form_for @sregistration do |f| %>
+  <%= f.inputs do %>
+  <div id="section-details">
+    <%= f.input :first_name, :input_html => { :size => 25 } %>
+    <%= f.input :last_name, :input_html => { :size => 25 } %>
+    <%= f.input :email, :input_html => { :size => 25 } %>
+    <%= f.input :cell, :input_html => { :size => 25 } %>
+    <%= f.input :gender,  :as => :radio, :collection => [:Male, :Female] %>
+    <%= f.input :group,  :as => :select, :collection => ["BSc", "MSc", "BTech", "MS", "MTech"] %>
+    <%= f.input :details, :input_html => { :class => 'autogrow', :rows => 10, :cols => 24, :maxlength => 2000 } %>
+    </div>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>

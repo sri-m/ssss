@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @sregistration.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @sregistration.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @sregistration.email %>
+</p>
+
+<p>
+  <strong>Cell:</strong>
+  <%= @sregistration.cell %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @sregistration.gender %>
+</p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @sregistration.group %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @sregistration.details %>
+</p>
+
+<%= link_to 'Edit', edit_sregistration_path(@sregistration) %> |
+<%= link_to 'Back', sregistrations_path %>
