@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+#Hi This is siva, sahu and sridevi project gemfile
 gem "thin"
 gem 'will_paginate'
 #gem 'rails-observers' 
